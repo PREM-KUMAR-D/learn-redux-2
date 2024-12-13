@@ -3,6 +3,15 @@ import classes from './CartItem.module.css';
 const CartItem = (props) => {
   const { title, quantity, total, price } = props.item;
 
+  const handlePlusClick =(event)=>{
+    
+  }
+
+  const handleMinusClick = (event)=>{
+
+  }
+
+
   return (
     <li className={classes.item}>
       <header>
@@ -17,8 +26,8 @@ const CartItem = (props) => {
           x <span>{quantity}</span>
         </div>
         <div className={classes.actions}>
-          <button>-</button>
-          <button>+</button>
+          <button onClick={handlePlusClick}>-</button>
+          <button onClick={handleMinusClick}>+</button>
         </div>
       </div>
     </li>
